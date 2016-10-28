@@ -1,0 +1,11 @@
+--autor zml
+--date 2016/10/28
+--Lua语言数组
+
+
+--定义一个有初始值的数组arr
+arr={1,2,3,"h"}
+
+for key, var in pairs(arr) do
+	print(key,var)
+end
