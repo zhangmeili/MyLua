@@ -1,0 +1,32 @@
+--autor zml
+--date 2016/10/28
+--克隆表（对象），继承表
+
+--create a table names people
+People ={}
+--create a function for people and print st
+People.sayHi= function ()
+	print("people say hi...")
+end
+--run sayHi function
+--People.sayHi()
+
+
+--create clone function and set a table 
+function clone(table)
+
+--create a temp table  tmpPeople
+	local tmpPeople={}
+	
+	--used for ..circulation  set keys to tmpPeople from table`s values
+	for key, var in pairs(table) do
+		tmpPeople[key]=var
+	end
+	return tmpPeople
+end
+
+--create local table people1   and 
+local People1 = clone(People)
+People1.sayHi()
+
+

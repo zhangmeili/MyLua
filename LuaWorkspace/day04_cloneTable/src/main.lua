@@ -1,0 +1,79 @@
+--autor zml
+--date 2016/10/28
+--克隆表（对象），继承表
+
+--create a table named people
+People ={}
+--create a sayHi method for people  and print sth
+People.sayHi= function (self)
+	print("people say hi..."..self.name)
+end
+--run sayHi function
+--People.sayHi()
+
+
+--create clone method and set a table
+function clone(table)
+
+	--create a temp table named tmpPeople
+	local tmpPeople={}
+
+	--used for ..circulation  set keys to tmpPeople from table`s values
+	for key, var in pairs(table) do
+		tmpPeople[key]=var
+	end
+	return tmpPeople
+end
+
+--create local table named people1 execute  clone method to it and execute  sayHi method
+--local People1 = clone(People)
+--People1.sayHi()
+
+
+--create a People and set he a name
+People.new=  function (name)
+	local self=clone(People)
+	self.name=name
+	return self;
+end
+
+--create a local object named p and execute People.new method to it
+local p=People.new("zhang san")
+--execute People`s sayHi method
+--p.sayHi(p)
+p:sayHi()
+
+--创建一个copy方法  把 table 的值 付给 dist
+function copy(dist,table)
+	for key, var in pairs(table) do
+		dist[key]=var
+	end
+end
+
+--新建一个man对象
+Man ={}
+--man创建一个有参数的name 构造，并让他继承于people
+Man.new=function (name)
+	local self=People.new(name)
+	--把man里所以的键值对 赋值给 people
+	copy(self,Man)
+	return self
+end
+
+
+--给man创建一个sayhello方法
+Man.sayHello=function(self)
+	print("Man sayHello .."..self.name)
+end
+
+
+local m=Man.new("li si");
+m:sayHi();--调用父类的sayhi方法
+m:sayHello();--调用本类的sayhello方法
+
+
+
+
+
+
+

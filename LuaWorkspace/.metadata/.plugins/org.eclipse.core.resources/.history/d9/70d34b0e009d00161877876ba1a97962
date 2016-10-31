@@ -1,0 +1,12 @@
+--autor zml
+--data 2016/10/28
+--克隆表（对象），继承表
+
+
+People ={}
+
+People.sayHi= function ()
+	print("people say hi...")
+end
+
+People.sayHi()

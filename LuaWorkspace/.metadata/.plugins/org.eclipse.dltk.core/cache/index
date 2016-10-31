@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="ASCII"?>
-<cache:CacheIndex xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cache="http://eclipse.org/dltk/cache_model" lastIndex="10" environment="org.eclipse.dltk.core.environment.localEnvironment">
+<cache:CacheIndex xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cache="http://eclipse.org/dltk/cache_model" lastIndex="20" environment="org.eclipse.dltk.core.environment.localEnvironment">
   <entries path="/Users/Aimee/Documents/MyLua/LuaWorkspace/day01_base/src" timestamp="1477577239000" lastAccessTime="1477631060595">
     <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/3503981847/1.idx"/>
   </entries>
-  <entries path="/Users/Aimee/Documents/MyLua/LuaWorkspace/day02_obj/src" timestamp="1477577339000" lastAccessTime="1477631060699">
+  <entries path="/Users/Aimee/Documents/MyLua/LuaWorkspace/day02_obj/src" timestamp="1477577339000" lastAccessTime="1477652101441">
     <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/3049751078/3.idx"/>
   </entries>
-  <entries path="/Users/Aimee/Documents/MyLua/LuaWorkspace/day01_base/src/main.lua" timestamp="1477577322000" lastAccessTime="1477631060593">
+  <entries path="/Users/Aimee/Documents/MyLua/LuaWorkspace/day01_base/src/main.lua" timestamp="1477577322000" lastAccessTime="1477889098284">
     <attributes name="indexed" location="2838196607/2435110119/5.idx"/>
   </entries>
-  <entries path="/Users/Aimee/Documents/MyLua/LuaWorkspace/day02_obj/src/main.lua" timestamp="1477577362000" lastAccessTime="1477631060698">
-    <attributes name="indexed" location="2838196607/508077165/7.idx"/>
-  </entries>
-  <entries path="/Users/Aimee/Documents/MyLua/LuaWorkspace/day03_arr/src" timestamp="1477631082000" lastAccessTime="1477632017652">
+  <entries path="/Users/Aimee/Documents/MyLua/LuaWorkspace/day03_arr/src" timestamp="1477631082000" lastAccessTime="1477889098322">
     <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/3684109467/9.idx"/>
+  </entries>
+  <entries path="/Users/Aimee/Documents/MyLua/LuaWorkspace/day02_obj/src/main.lua" timestamp="1477577362000" lastAccessTime="1477889098286">
+    <attributes name="indexed" location="2838196607/508077165/11.idx"/>
+  </entries>
+  <entries path="/Users/Aimee/Documents/MyLua/LuaWorkspace/day04_cloneTable/src" timestamp="1477652747000" lastAccessTime="1477891848303">
+    <attributes name=".dltk.core.archive.cache.lastaccess" location="2838196607/347702014/15.idx"/>
+  </entries>
+  <entries path="/Users/Aimee/Documents/MyLua/LuaWorkspace/day03_arr/src/main.lua" timestamp="1477632063000" lastAccessTime="1477889098321">
+    <attributes name="indexed" location="2838196607/172627371/17.idx"/>
   </entries>
 </cache:CacheIndex>

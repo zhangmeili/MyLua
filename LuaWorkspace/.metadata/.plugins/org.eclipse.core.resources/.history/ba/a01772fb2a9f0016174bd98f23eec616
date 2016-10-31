@@ -1,0 +1,75 @@
+--autor zml
+--date 2016/10/28
+--克隆表（对象），继承表
+
+--create a table named people
+People ={}
+--create a sayHi method for people  and print sth
+People.sayHi= function (self)
+	print("people say hi..."..self.name)
+end
+--run sayHi function
+--People.sayHi()
+
+
+--create clone method and set a table 
+function clone(table)
+
+--create a temp table named tmpPeople
+	local tmpPeople={}
+	
+	--used for ..circulation  set keys to tmpPeople from table`s values
+	for key, var in pairs(table) do
+		tmpPeople[key]=var
+	end
+	return tmpPeople
+end
+
+--create local table named people1 execute  clone method to it and execute  sayHi method 
+--local People1 = clone(People)
+--People1.sayHi()
+
+
+--create a People and set he a name
+People.new=  function (name)
+	local self=clone(People)
+	self.name=name
+	return self;
+end
+
+--create a local object named p and execute People.new method to it 
+local p=People.new("zhang san")
+--execute People`s sayHi method 
+--p.sayHi(p)  
+p:sayHi()
+
+
+function copy(dist,table)
+	for key, var in pairs(table) do
+		dist[key]=var
+	end
+end
+
+
+Man ={}
+Man.new=function (name)
+local self=People.new(name)
+--把man里所以的键值对 赋值给 people
+copy(self,Man)
+return self
+end
+
+Man.sayHello=function(self)
+print("Man sayHello .."..self.name)
+end
+
+local m=Man.new("li si");
+m:sayHi();
+m:sayHello();
+
+
+
+
+
+
+
